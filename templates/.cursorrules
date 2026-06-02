@@ -1,0 +1,7 @@
+## Frontend Rules (templates/ only)
+- Use Bootstrap 5 classes — do not write custom CSS for layout
+- All interactive elements must have accessible labels (aria-label or label element)
+- JavaScript goes in <script> tags at the bottom of the body, not inline
+- Use fetch() for all async requests — no jQuery
+- Every form must have client-side validation before submission
+- Data displayed to the user must be HTML-escaped — never inject raw API data into innerHTML
