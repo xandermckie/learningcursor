@@ -1,0 +1,11 @@
+Context Review
+The first response returned a generic response based on what would happen if the cache file is corrupted without handling. It gave a sort of textbook response where it explained to me what was taking place in data_loader.py lines 1-17 explaining that there isn't a backup or anyway to decode an empty cache or bad file.
+
+The second response directly called data_loader return a similar reponse, but there was less jargon at the front that simply explain how it would cause issues in general terms and it immediately addressed the issues with my code first, returning the same reponses for what isn't handled at the end. Things like json.JSONDecodeError, schema validation, I/O errors, atomic saves, backup/repairm explicit encoding, signaling recovery.
+
+The third reponse took a look at all .pys in my folder and was able to accurately suggest the merge change. It explained the recommended placement of the change, exactly what respensibilities it would cover compared to what is currently in the folder, then the full suggested code to easily complete a pure merge. At the end it gave some design choices that could also help improve the project based on the previous questions to prevent continuing the issues after making the merge changes. Finally ending with some example usage of the merge add-on so that we can visualize what the change would look like and if it would fulfill the proposed idea properly before implementation.
+
+
+Which answer was most accurate? Most detailed? Which would you actually trust to write production code from?
+
+The most accurate and detailed answer was the browser search answer. It provided a step by step to exactly what I wanted to do included the 15 minute execution, the other answers were technically correct, but asking with no call return a reponse that was basically just suggestion different ways to complete the task with no specific steps, which would just lead me to more questions. The second with the @flask call was better, but left out the 15 minute execution as a note rather than a critical step. The web call fixed this and gave suggestions, but focused on exactly what I wanted to implement first. I think I would trust the web call to write production code from.
